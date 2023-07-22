@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>SIT722 Assignment 1.2P <%= title %></p>
+
+    <table>
+
+      
+      <% Glossary.forEach((Glosary) => { %>
+
+        <tr>
+
+          <td>
+            <%= Glosary.ID %>
+          </td>
+          <td>
+            <%= Glosary.Term %>
+          </td>
+          <td>
+            <%= Glosary.Description %>
+          </td>
+          <td>
+            <%= Glosary.References %>
+          </td>
+        </tr>
+
+
+      <% }); %>
+
+    </table>
+
+  </body>
+</html>
